@@ -7,7 +7,7 @@ namespace LegendsHQ.Repository
     {
 
         Task<Legend> AddLegendAsync(LegendDTO newLegend);
-        Task<List<Legend>> GetAllLegendsAsync();
+        Task<IEnumerable<Legend>> GetAllLegendsAsync();
         Task<Legend> GetLegendByIdAsync(Guid legendId);
 
     }

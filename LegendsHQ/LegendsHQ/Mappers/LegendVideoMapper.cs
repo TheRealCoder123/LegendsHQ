@@ -14,7 +14,6 @@ namespace LegendsHQ.Mappers
             {
 
                 video_id = legendVideo.video_id,
-                legend_id = legendVideo.legend_id,
                 title = legendVideo.title,
                 duration = legendVideo.duration,
                 video_url = legendVideo.video_url
@@ -29,7 +28,6 @@ namespace LegendsHQ.Mappers
             {
 
                 video_id = legendVideoDTO.video_id,
-                legend_id = legendVideoDTO.legend_id,
                 title = legendVideoDTO.title,
                 duration = legendVideoDTO.duration,
                 video_url = legendVideoDTO.video_url

@@ -12,7 +12,6 @@ namespace LegendsHQ.Mappers
             return new LegendClassDTO
             {
                 class_id = legendClass.class_id,
-                legend_id = legendClass.legend_id,  
                 class_name = legendClass.class_name,
                 class_icon = legendClass.class_icon,
                 class_description = legendClass.class_description
@@ -25,7 +24,6 @@ namespace LegendsHQ.Mappers
             return new LegendClass
             {
                 class_id = legendClassDTO.class_id,
-                legend_id = legendClassDTO.legend_id,
                 class_name = legendClassDTO.class_name,
                 class_icon = legendClassDTO.class_icon,
                 class_description = legendClassDTO.class_description

@@ -1,4 +1,5 @@
 using LegendsHQ.Data;
+using LegendsHQ.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +16,8 @@ builder.Services.AddDbContext<DatabaseContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("LegendsHQ"));
 
 });
+
+builder.Services.AddScoped<ILegendRepository, LegendRepository>();
 
 var app = builder.Build();
 
